@@ -1,9 +1,9 @@
 const express = require('express');
 const mongoose = require('mongoose') 
 const cors = require("cors");
-require('../db/config');
-const User =require("../db/User");
-const Product=require('../db/Product');
+require('./db/config');
+const User =require("./db/User");
+const Product=require('./db/Product');
 
 const Jwt = require('jsonwebtoken');
 
