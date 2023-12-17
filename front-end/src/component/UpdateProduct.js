@@ -14,7 +14,7 @@ const UpdateProduct =()=>{
 
     const getProductDetails = async ()=>{
         console.log(params)
-        let result = await fetch(`http://localhost:5020/product/${params.id}`,{
+        let result = await fetch(`https://ecommerce-backend-m338.onrender.com/product/${params.id}`,{
             headers:{
                 authorization:`bearer ${JSON.parse(localStorage.getItem('token'))}`
               }
@@ -28,7 +28,7 @@ const UpdateProduct =()=>{
 
     const updateProduct = async()=>{
         console.log(name,price,category,company)
-        let result = await fetch(`http://localhost:5020/product/${params.id}`,{
+        let result = await fetch(`https://ecommerce-backend-m338.onrender.com/product/${params.id}`,{
             method: 'Put',
             body:JSON.stringify({name,price,category,company}),
             headers:{

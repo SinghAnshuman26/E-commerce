@@ -19,7 +19,7 @@ const SignUp =()=>{
             return false;
         }
             console.warn(name,email,password);
-            let result = await fetch('http://localhost:5020/register',{
+            let result = await fetch('https://ecommerce-backend-m338.onrender.com/register',{
                 method:'post',
                 body :JSON.stringify({name,email,password}),
                 headers:{

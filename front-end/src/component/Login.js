@@ -12,7 +12,7 @@ const Login = () => {
     })
     const handleLogin = async ()=>{
     console.log("email,password",email,password);
-    let result = await fetch('http://localhost:5020/login',{
+    let result = await fetch('https://ecommerce-backend-m338.onrender.com/login',{
         method:'post',
         body:JSON.stringify({email,password}),
         headers:{
